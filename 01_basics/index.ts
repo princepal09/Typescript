@@ -1,15 +1,21 @@
-// Todo1 . Write a program to add two numbers
-// Todo2 . how to catch errors and solve it?
-// Todo3 . TS configuration file
+var userName : string = "Prince Pal"
+var age : number = 20
 
-// * func define
-function sum(a: number, b: number): number {
-  return a + b;
-}
+var number : number = 90;
+var price : number = 90.89;
 
-const mul = (a: number, b: number): number => {
-  return a * b;
-};
-// * fun call
-console.log(sum(5, 12));
-console.log(mul(4, 5));
+
+var data = " " // null
+
+var data2 : undefined = undefined;
+
+
+var numArray : number[] = [1,2,4,6];
+
+//Tuples different data type value
+
+
+
+
+
+var y:any  = true
