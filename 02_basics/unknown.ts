@@ -7,3 +7,6 @@ val = true;
 if (typeof val == "string") {
   console.log(val.toUpperCase());
 }
+
+console.log(val)
+
