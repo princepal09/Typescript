@@ -1,8 +1,8 @@
 class Product {
-  name: string;
+  public name: string; // Public is by default
   price: number;
-  pId: number;
-  inCart: boolean;
+  private pId: number;  // Can't use private outside the class
+  protected inCart: boolean; // Access through inside the class  and inside subclasses
   isOrdered: boolean;
 
   constructor(name: string, price: number, pId: number) {
