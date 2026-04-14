@@ -37,10 +37,46 @@ var collegeData: Readonly<collegeType> = {
 
 // collegeData.name = 'ref'
 
+// PICK
 
-// PICK 
+var collegeData2: Pick<collegeType, "name" | "location"> = {
+  name: "Prince",
+  location: "Delhi",
+};
 
-var collegeData2 : Pick<collegeType , 'name' | 'location'> = {
-     name : 'Prince',
-     location : 'Delhi'
+
+// OMIT
+
+var collegeData3: Omit<collegeType, 'branch'> = {
+    name : "PR",
+    location : "Ff",
+    students : 100
+}
+
+// Exclude
+
+type APIStatus = 'loading' | 'error' | 'pending' | 'success'
+var apicall : Exclude<APIStatus, 'pending'> = 'success'
+apicall = 'loading'
+
+// Extract 
+
+var apicall2 : Extract<APIStatus, 'error' | 'success'> = 'success'
+
+// Non Nullable
+
+type randomType = string | number | undefined | null | string[]
+
+var randomData : NonNullable<randomType> = 'hello'
+
+// Record
+
+type siteRole = 'Admin' | 'User' | 'Guest'
+
+var siteRoleOption : siteRole = 'Admin'
+
+var roleName : Record<siteRole, string> = {
+    Admin : "anil",
+    User  : "Adif",
+    Guest : "sgodj"
 }
